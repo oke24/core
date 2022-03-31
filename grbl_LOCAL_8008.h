@@ -81,6 +81,10 @@
 #define SAFETY_DOOR_COOLANT_DELAY 1.0f // Float (seconds)
 #endif
 
+#ifndef SPINDLE_RPM_CONTROLLED
+#define SPINDLE_PWM_DIRECT
+#endif
+
 #ifndef SLEEP_DURATION
 #define SLEEP_DURATION 5.0f // Number of minutes before sleep mode is entered.
 #endif

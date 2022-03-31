@@ -34,8 +34,7 @@
 #else
 #define GRBL_VERSION "1.1f"
 #endif
-//ok #define GRBL_BUILD 20220215
-#define GRBL_BUILD 20220331-1
+#define GRBL_BUILD 20220215
 
 // The following symbols are set here if not already set by the compiler or in config.h
 // Do NOT change here!
@@ -79,6 +78,10 @@
 
 #ifndef SAFETY_DOOR_COOLANT_DELAY
 #define SAFETY_DOOR_COOLANT_DELAY 1.0f // Float (seconds)
+#endif
+
+#ifndef SPINDLE_RPM_CONTROLLED
+#define SPINDLE_PWM_DIRECT
 #endif
 
 #ifndef SLEEP_DURATION
