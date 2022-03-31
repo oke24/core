@@ -384,7 +384,7 @@ __NOTE:__ these definitions are only referenced in this file. Do __NOT__ change!
 // alarm out and force the user to manually disengage the limit switch. Otherwise, if you have one
 // limit switch for each axis, don't enable this option. By keeping it disabled, you can perform a
 // homing cycle while on the limit switch and not have to move the machine off of it.
-//#define DEFAULT_LIMITS_TWO_SWITCHES_ON_AXES //  Default disabled. Uncomment to enable.
+#define DEFAULT_LIMITS_TWO_SWITCHES_ON_AXES //  Default disabled. Uncomment to enable.  //ok
 
 // By default, Grbl disables feed rate overrides for all G38.x probe cycle commands. Although this
 // may be different than some pro-class machine control, it's arguable that it should be this way.
@@ -535,7 +535,7 @@ __NOTE:__ these definitions are only referenced in this file. Do __NOT__ change!
 //#define DEFAULT_INVERT_PROBE_BIT
 //#define DEFAULT_LASER_MODE
 //#define DEFAULT_LATHE_MODE
-//#define DEFAULT_HOMING_ENABLE
+#define DEFAULT_HOMING_ENABLE
 //#define DEFAULT_HOMING_ALLOW_MANUAL
 //#define DEFAULT_HOMING_DIR_MASK 0 // move positive dir
 //#define DEFAULT_HOMING_FEED_RATE 25.0f // mm/min
@@ -605,7 +605,7 @@ __NOTE:__ these definitions are only referenced in this file. Do __NOT__ change!
 // cycle is still invoked by the $H command. This is disabled by default. It's here only to address
 // users that need to switch between a two-axis and three-axis machine. This is actually very rare.
 // If you have a two-axis machine, DON'T USE THIS. Instead, just alter the homing cycle for two-axes.
-//#define HOMING_SINGLE_AXIS_COMMANDS // Default disabled. Uncomment to enable.
+#define HOMING_SINGLE_AXIS_COMMANDS // Default disabled. Uncomment to enable. //ok
 
 // After homing, Grbl will set by default the entire machine space into negative space, as is typical
 // for professional CNC machines, regardless of where the limit switches are located. Set this

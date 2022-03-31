@@ -109,16 +109,18 @@ PROGMEM const settings_t defaults = {
 #if N_AXIS > 3
     .steppers.is_rotational.mask = (ST_ROTATIONAL_MASK & AXES_BITMASK) >> 3,
 #endif
-#if DEFAULT_HOMING_ENABLE
+//#if DEFAULT_HOMING_ENABLE
     .homing.flags.enabled = DEFAULT_HOMING_ENABLE,
     .homing.flags.init_lock = DEFAULT_HOMING_INIT_LOCK,
     .homing.flags.single_axis_commands = HOMING_SINGLE_AXIS_COMMANDS,
     .homing.flags.force_set_origin = HOMING_FORCE_SET_ORIGIN,
+    //ok
+    .homing.flags.force_set_origin = 1,
     .homing.flags.manual = DEFAULT_HOMING_ALLOW_MANUAL,
     .homing.flags.override_locks = DEFAULT_HOMING_OVERRIDE_LOCKS,
-#else
-    .homing.flags.value = 0,
-#endif
+//#else
+//    .homing.flags.value = 0,
+//#endif
     .homing.dir_mask.value = DEFAULT_HOMING_DIR_MASK,
     .homing.feed_rate = DEFAULT_HOMING_FEED_RATE,
     .homing.seek_rate = DEFAULT_HOMING_SEEK_RATE,

@@ -846,6 +846,10 @@ void report_build_info (char *line, bool extended)
     hal.stream.write(uitoa(GRBL_BUILD));
     hal.stream.write(":");
     hal.stream.write(line);
+    //ok
+    hal.stream.write(", FLAG:");
+    hal.stream.write(uitoa(settings.homing.flags.force_set_origin));
+    
     hal.stream.write("]" ASCII_EOL);
 
 #if COMPATIBILITY_LEVEL == 0
